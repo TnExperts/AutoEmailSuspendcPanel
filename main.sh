@@ -27,7 +27,7 @@ while read -r line; do
 			else
 				echo "${username} at ${totalMail}"
 				echo "Suspended ${username} at ${totalMail}" >> $susUsers
-				whmapi1 suspend_outgoing_email user=${username}
+				/usr/sbin/whmapi1 suspend_outgoing_email user=${username}
 			fi
 		fi
 	fi
